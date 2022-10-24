@@ -1,0 +1,11 @@
+<app-alert
+  *ngFor="let alert of alertsToShow"
+  [message]="alert.message"
+  [alert]="alert.alert"
+  [dismissable]="alert.dismissable"
+  (dismissed)="theyDismissed($event)"
+></app-alert>
+
+<div>
+  <app-alert [message]="thing"></app-alert>
+</div>
